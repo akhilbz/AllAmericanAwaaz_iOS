@@ -7,18 +7,37 @@
 
 import UIKit
 
-class TeamsViewController: UIViewController {
-
+class TeamsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let teams = [
+        ("image1", "Title 1", "Subtitle 1"),
+        ("image2", "Title 2", "Subtitle 2"),
+        ("image3", "Title 3", "Subtitle 3")
+    ]
+    
+    // Handle row selection
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
+}
     
 
     
     
-}
+
