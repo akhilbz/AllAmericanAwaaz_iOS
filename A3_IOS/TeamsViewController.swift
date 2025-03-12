@@ -7,26 +7,41 @@
 
 import UIKit
 
-class TeamsViewController: UIViewController {
+class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var profileButton: UIBarButtonItem!
     
-
+        
+    
     @IBOutlet weak var tableView: UITableView!
     
     let teams = [
-        ("image1", "Title 1", "Subtitle 1"),
-        ("image2", "Title 2", "Subtitle 2"),
-        ("image3", "Title 3", "Subtitle 3")
+        ("A3LOGO1", "Anokha", "University of Maryland"),
+        ("A3LOGO2", "Arabhi", "Virginia Commonwealth University"),
+        ("A3LOGO3", "Asli Baat", "University of Southern California"),
+        ("A3LOGO4", "Astha A Cappella", "Saint Louis University")
     ]
     
     // Handle row selection
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        tableView.delegate = self
+        tableView.dataSource = self	
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return teams.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let team = teams[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TeamCell", for: indexPath)
+        cell.imageView?.image = UIImage(named: team.0)
+        cell.textLabel?.text = team.1
+        cell.detailTextLabel?.text = team.2
+        return cell
     }
 }
     
