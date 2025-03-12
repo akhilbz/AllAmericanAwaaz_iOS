@@ -201,7 +201,7 @@
         <!--All American Awaaz-->
         <scene sceneID="dHQ-5U-vgc">
             <objects>
-                <viewController id="CuC-AG-DK0" customClass="ViewController" customModule="A3_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CuC-AG-DK0" customClass="CompetitionInfoViewController" customModule="A3_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M1h-BM-mc4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,6 +253,9 @@
                                     <segment title="Judging"/>
                                     <segment title="Media"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegmentChanged:" destination="CuC-AG-DK0" eventType="valueChanged" id="Qt0-An-l0g"/>
+                                </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWO-pE-bgH">
                                 <rect key="frame" x="0.0" y="483" width="393" height="286"/>
@@ -280,6 +283,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="compInfoSegCtrl" destination="eD6-d5-uHX" id="Zao-4j-55G"/>
                         <outlet property="profileButton" destination="bNv-w0-Esd" id="xDF-b6-8ER"/>
                     </connections>
                 </viewController>
