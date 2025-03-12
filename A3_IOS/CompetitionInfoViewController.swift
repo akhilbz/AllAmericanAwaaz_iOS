@@ -19,17 +19,17 @@ class CompetitionInfoViewController: UIViewController {
     }
     
     @IBAction func onSegmentChanged(_ sender: UISegmentedControl) {
-        switch sender.selectedSegmentIndex {
-            case 0:
-                showView(for: .lineup)
-            case 1:
-                showView(for: .judging)
-            case 2:
-                showView(for: .media)
-            default:
-                break
-            }
-        }
+//        switch sender.selectedSegmentIndex {
+//            case 0:
+//                showView(for: .lineup)
+//            case 1:
+//                showView(for: .judging)
+//            case 2:
+//                showView(for: .media)
+//            default:
+//                break
+//            }
+//        }
     }
 
     enum ViewType {
