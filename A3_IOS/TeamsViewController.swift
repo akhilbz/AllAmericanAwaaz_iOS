@@ -43,6 +43,12 @@ class TeamsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.detailTextLabel?.text = team.2
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        let teamInfoViewController = storyboard.instantiateViewController(withIdentifier: "teamInfoViewController")
+        self.navigationController?.pushViewController(teamInfoViewController, animated: true)
+    }
 }
     
 
