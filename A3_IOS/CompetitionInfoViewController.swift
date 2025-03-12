@@ -36,11 +36,11 @@ class CompetitionInfoViewController: UIViewController {
         case lineup, judging, media
     }
 
-    private func showView(for type: ViewType) {
-        lineupView.isHidden = type != .lineup
-        judgingView.isHidden = type != .judging
-        mediaView.isHidden = type != .media
-    }
+//    private func showView(for type: ViewType) {
+//        lineupView.isHidden = type != .lineup
+//        judgingView.isHidden = type != .judging
+//        mediaView.isHidden = type != .media
+//    }
 
     
     /*
