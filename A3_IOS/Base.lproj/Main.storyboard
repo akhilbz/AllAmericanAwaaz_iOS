@@ -679,7 +679,7 @@
                                     <color key="baseBackgroundColor" red="0.86666667460000002" green="0.82352948189999997" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="nyW-QJ-Tj8" kind="show" id="R42-rt-hRu"/>
+                                    <segue destination="nyW-QJ-Tj8" kind="presentation" modalPresentationStyle="fullScreen" id="R42-rt-hRu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZr-aa-BOt">
@@ -793,7 +793,7 @@
                                             <color key="baseForegroundColor" red="0.86666667460000002" green="0.82745099070000006" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="eQy-7y-IPb" kind="show" id="bVg-zw-vpa"/>
+                                            <segue destination="eQy-7y-IPb" kind="presentation" modalPresentationStyle="fullScreen" id="bVg-zw-vpa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRy-Za-IR0">
@@ -859,11 +859,11 @@
             <objects>
                 <viewController id="nyW-QJ-Tj8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bmi-U1-smA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-3G-kZq">
-                                <rect key="frame" x="30" y="60" width="333" height="752"/>
+                                <rect key="frame" x="30" y="60" width="333" height="762"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_0162" translatesAutoresizingMaskIntoConstraints="NO" id="e0X-pK-euk">
                                         <rect key="frame" x="114.99929693054264" y="30.999999999998636" width="99.999999999939064" height="75"/>
@@ -885,7 +885,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8h-uf-pPv">
-                                        <rect key="frame" x="50" y="662" width="233" height="40"/>
+                                        <rect key="frame" x="50" y="672" width="233" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="CREATE ACCOUNT">
                                             <fontDescription key="titleFontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="22"/>
@@ -951,7 +951,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-ru-e6z">
-                                        <rect key="frame" x="50" y="576" width="86" height="20"/>
+                                        <rect key="frame" x="50" y="586" width="86" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="PASSWORD">
                                                 <attributes>
@@ -964,18 +964,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgs-Fw-CnV">
-                                        <rect key="frame" x="168.33333333333334" y="703.66666666666663" width="108.66666666666666" height="30.333333333333371"/>
+                                        <rect key="frame" x="168.33333333333334" y="713.66666666666663" width="108.66666666666666" height="30.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login Here">
                                             <fontDescription key="titleFontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
                                             <color key="baseForegroundColor" red="0.86666667460000002" green="0.82745099070000006" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="P5h-jK-Nb1" kind="show" id="PMq-wL-6HX"/>
+                                            <segue destination="P5h-jK-Nb1" kind="presentation" modalPresentationStyle="fullScreen" id="PMq-wL-6HX"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvX-ND-Auc">
-                                        <rect key="frame" x="71" y="710.66666666666663" width="109.33333333333331" height="16.333333333333371"/>
+                                        <rect key="frame" x="71" y="720.66666666666663" width="109.33333333333331" height="16.333333333333371"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Have an account?">
                                                 <attributes>
@@ -987,7 +987,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yxz-K0-2QA">
-                                        <rect key="frame" x="50" y="596" width="233" height="34"/>
+                                        <rect key="frame" x="50" y="606" width="233" height="34"/>
                                         <color key="backgroundColor" red="0.86666667460000002" green="0.82745099070000006" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1066,11 +1066,11 @@
             <objects>
                 <viewController id="eQy-7y-IPb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YvI-Lu-uWo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwV-ij-pU1">
-                                <rect key="frame" x="30" y="60" width="333" height="722"/>
+                                <rect key="frame" x="30" y="60" width="333" height="732"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_0162" translatesAutoresizingMaskIntoConstraints="NO" id="PnZ-XG-IpX">
                                         <rect key="frame" x="115.33333333333333" y="31" width="100" height="75"/>
@@ -1092,19 +1092,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-kV-cX3">
-                                        <rect key="frame" x="50" y="404.33333333333331" width="233" height="34"/>
+                                        <rect key="frame" x="50" y="414.33333333333331" width="233" height="34"/>
                                         <color key="backgroundColor" red="0.86666667460000002" green="0.82745099070000006" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qp-Ad-qwu">
-                                        <rect key="frame" x="50" y="499.33333333333337" width="233" height="34"/>
+                                        <rect key="frame" x="50" y="509.33333333333337" width="233" height="34"/>
                                         <color key="backgroundColor" red="0.86666667460000002" green="0.82745099070000006" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfG-Uf-zMX">
-                                        <rect key="frame" x="50.000000000000007" y="382.33333333333331" width="112.66666666666669" height="20"/>
+                                        <rect key="frame" x="50.000000000000007" y="392.33333333333331" width="112.66666666666669" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="New Password">
                                                 <attributes>
@@ -1117,7 +1117,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qX6-Eq-Zt0">
-                                        <rect key="frame" x="50" y="477.33333333333337" width="141.66666666666666" height="20"/>
+                                        <rect key="frame" x="50" y="487.33333333333337" width="141.66666666666666" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Confirm Password">
                                                 <attributes>
@@ -1130,7 +1130,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAX-7S-NGb">
-                                        <rect key="frame" x="50" y="593.33333333333337" width="233" height="39.666666666666629"/>
+                                        <rect key="frame" x="50" y="603.33333333333337" width="233" height="39.666666666666629"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="SAVE PASSWORD">
                                             <fontDescription key="titleFontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="22"/>
@@ -1190,6 +1190,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="YBr-8t-9s5"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QuH-aE-aNN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
