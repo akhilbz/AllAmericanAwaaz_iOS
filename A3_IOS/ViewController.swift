@@ -8,17 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var profileButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func profileButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "ProfileSegue", sender: self)
-    }
-    
 }
 

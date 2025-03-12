@@ -9,8 +9,9 @@ import UIKit
 
 class TeamsViewController: UIViewController {
     
+    @IBOutlet weak var profileButton: UIBarButtonItem!
     
-    
+
     @IBOutlet weak var tableView: UITableView!
     
     let teams = [

@@ -9,8 +9,14 @@ import UIKit
 
 class CompetitionInfoViewController: UIViewController {
 
+    
     @IBOutlet weak var compInfoSegCtrl: UISegmentedControl!
     
+    @IBOutlet weak var lineupView: UIView!
+    
+    @IBOutlet weak var judgingView: UIView!
+    
+    @IBOutlet weak var mediaView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,28 +25,27 @@ class CompetitionInfoViewController: UIViewController {
     }
     
     @IBAction func onSegmentChanged(_ sender: UISegmentedControl) {
-//        switch sender.selectedSegmentIndex {
-//            case 0:
-//                showView(for: .lineup)
-//            case 1:
-//                showView(for: .judging)
-//            case 2:
-//                showView(for: .media)
-//            default:
-//                break
-//            }
-//        }
-    }
+        switch sender.selectedSegmentIndex {
+            case 0:
+                showView(for: .lineup)
+            case 1:
+                showView(for: .judging)
+            case 2:
+                showView(for: .media)
+            default:
+                break
+            }
+        }
 
     enum ViewType {
         case lineup, judging, media
     }
 
-//    private func showView(for type: ViewType) {
-//        lineupView.isHidden = type != .lineup
-//        judgingView.isHidden = type != .judging
-//        mediaView.isHidden = type != .media
-//    }
+    private func showView(for type: ViewType) {
+        lineupView.isHidden = type != .lineup
+        judgingView.isHidden = type != .judging
+        mediaView.isHidden = type != .media
+    }
 
     
     /*
